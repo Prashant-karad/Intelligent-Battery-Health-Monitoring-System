@@ -56,7 +56,7 @@ def extract_features(df):
         'V_mean': v.mean(),
         'V_min': v.min(),
         'V_std': v.std(),
-        'V_area': np.trapezoid(y, x)
+        'V_area': np.trapezoid(v, t)
 
     }
     
@@ -353,4 +353,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
